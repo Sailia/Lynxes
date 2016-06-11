@@ -1,0 +1,1 @@
+lynxes_controller.rb
