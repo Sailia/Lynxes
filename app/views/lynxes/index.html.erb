@@ -1,0 +1,21 @@
+<h1>Listing Lynxes</h1>
+
+<table> 
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Furry?</th>
+		<th>Modify</th>
+	</tr>
+		<% @lynxes.each do |lx| %>
+		<tr>
+			<td><%= lx.name %></td>
+			<td><%= lx.age.to_i %></td>
+			<td><%= lx.furry %></td>
+			<td>Edit</td>
+			<td>Destroy</td>
+		</tr>
+		<% end %>
+</table>
+
+<%= render "lynxes/form" %>

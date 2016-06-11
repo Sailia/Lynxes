@@ -1,0 +1,19 @@
+<h2>Form to create a new Lynx</h2>
+
+<%= form_for(@lynx) do |f| %>
+<div>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</div>
+<div>
+	<%= f.label :age %>
+	<%= f.number_field :age %>
+</div>
+	<%= f.label :furry %>
+	<%= f.check_box :furry %>
+</div>
+	<%= f.submit "Create" %>
+<div>
+<% end %>
+
+	
